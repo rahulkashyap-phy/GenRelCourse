@@ -1,0 +1,26 @@
+
+;to transclude all tiddlers with a given filter. This can be used as a Refrence list a the end of a tiddler 
+
+```
+<$list filter="[tag{!!title}]">  ## filter is tag of current tiddler; use [tag[my_tag]] 
+<h1><$link><$transclude field="title"/></$link></h1>
+<$transclude mode="block"/>
+</$list>
+```
+
+; Creating frames -- 
+```
+@@.tc-tiddler-frame
+@@width:400px;height:200px;
+
+$$$image/svg+xml
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="100">
+  <circle cx="100" cy="50" r="40" stroke="black" stroke-width="2" fill="green" />
+</svg>
+$$$
+
+
+some texts 
+
+@@
+```
