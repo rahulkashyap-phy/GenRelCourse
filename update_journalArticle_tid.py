@@ -5,6 +5,7 @@ __email__ = "rahulkashyap411@gmail.com"
 
 """scans the directory _all_papers_Refs/<year> under each year and checks if this tiddler has already been created and exists in the directory old_all_papers_Refs_tiddlers and if it's new creates new tiddlers in new_all_papers_Refs_tiddlers. 
 NOTE: it doesnot check if the tiddler has been already exported in the TW. So, after importing the tiddlers, copy them into old directory for next time succesful update
+# https://github.com/tobibeer/tw5-appear refer this plugin for appear widget used here 
 """
 
 import glob
