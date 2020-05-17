@@ -1,0 +1,12 @@
+\define article(file)
+[ext[$file$|../../Desktop/$file$]]
+\end
+
+\define openalltagged(label)
+<$button class="openalltagged">
+$label$
+<$list filter="[tag[$label$]]" variable="tid">
+<$action-navigate $to=<<tid>>/>
+</$list>
+</$button>
+\end
